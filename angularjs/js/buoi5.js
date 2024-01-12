@@ -50,4 +50,11 @@ myApp.controller('employeeController', function ($scope) {
     $scope.orderBy2 = '';
     $scope.limitTo2 = '';
     $scope.search = '';
+
+    // Khi click vào tên của nhân viên thì sẽ hiển thị thông báo
+    // Xin chào + tên của nhân viên
+
+    // Khi hover chuột vào ngày sinh
+    // Nếu >= 18 thì hiển thị "Đủ tuổi đi tù"
+    // Nếu < 18 thì hiển thị "Chưa đủ tuổi đi tù"
 });
