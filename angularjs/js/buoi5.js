@@ -46,4 +46,8 @@ myApp.controller('employeeController', function ($scope) {
     $scope.myFunc = function () {
         console.log("Mãi bên nhau bạn nhé!");
     }
+
+    $scope.orderBy2 = '';
+    $scope.limitTo2 = '';
+    $scope.search = '';
 });

@@ -22,9 +22,26 @@
             Nếu >= 18 thì hiển thị "Đủ tuổi đi tù"
             Nếu < 18 thì hiển thị "Chưa đủ tuổi đi tù"
          -->
-        <select ng-model="test">
-            <option value="1">1</option>
+        Order By:
+        <select ng-model="orderBy2">
+            <option value="">Lựa chọn</option>
+            <option value="hoTen">Họ tên</option>
+            <option value="ngaySinh">Ngày sinh</option>
+            <option value="luong">Lương</option>
+            <option value="gioiTinh">Giới tính</option>
         </select>
+
+        Limit To:
+        <select ng-model="limitTo2">
+            <option value="">Lựa chọn</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        Search:
+        <input type="text" ng-model="search">
 
         <table class="table table-hover table-striped">
             <thead>
@@ -36,7 +53,7 @@
             </thead>
             <tbody>
                 <!-- AngularJS Filters -->
-                <tr ng-repeat="item in employees | limitTo: 4 | orderBy: 'gioiTinh' | filter: 'B'">
+                <tr ng-repeat="item in employees | limitTo: limitTo2 | orderBy: orderBy2 | filter: search">
                     <td>{{ $index + 1 }}</td>
                     <td>{{ item.hoTen | uppercase }}</td>
                     <td>{{ item.ngaySinh | date : 'dd-MM-yyyy' }}</td>
