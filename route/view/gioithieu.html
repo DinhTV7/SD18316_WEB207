@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<h2>Bài 1</h2>
+<!-- ng-submit chỉ sử dụng được ở trong form và dùng để gửi dữ liệu -->
+<form ng-submit="tinhTong()">
+    Số 1:
+    <input type="text" ng-model="inputValue.num1">
+    Số 2:
+    <input type="text" ng-model="inputValue.num2">
+    <button class="btn btn-secondary" type="submit">Kết quả</button>
+</form>
+Đây là ng-if <h5 ng-if="ketqua">Kết quả là: {{ ketqua }}</h5>
+<br/>
+Đây là ng-show <h5 ng-show="ketqua">Kết quả là: {{ ketqua }}</h5>
