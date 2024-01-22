@@ -11,3 +11,16 @@
 Đây là ng-if <h5 ng-if="ketqua">Kết quả là: {{ ketqua }}</h5>
 <br/>
 Đây là ng-show <h5 ng-show="ketqua">Kết quả là: {{ ketqua }}</h5>
+
+<h2>Bài 2:</h2>
+<form ng-submit="dangNhap()">
+    <label for="" class="form-label">Tên đăng nhập</label>
+    <input type="text" class="form-control" ng-model="inputValue.tenDangNhap" required>
+    <p ng-if="error.tenDangNhap" class="text-danger">{{ error.tenDangNhap }}</p>
+
+    <label for="" class="form-label">Mật khẩu</label>
+    <input type="text" class="form-control" ng-model="inputValue.matKhau" required>
+    <p ng-if="error.matKhau" class="text-danger">{{ error.matKhau }}</p>
+
+    <button type="submit" class="btn btn-primary mt-2">Đăng nhập</button>
+</form>
