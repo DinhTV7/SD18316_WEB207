@@ -1,0 +1,10 @@
+{
+    "student": [
+        {
+            "id": 1,
+            "hoTen": "DinhTV7",
+            "email": "abc@gmail.com",
+            "ngaySinh": "1945-10-28T18:55:10.465Z"
+        }
+    ]
+}
