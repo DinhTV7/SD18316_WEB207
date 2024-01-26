@@ -49,6 +49,7 @@
     <script src="./libs/angular.min.js"></script>
     <script src="./libs/angular-route.min.js"></script>
     <script src="./controller/ListController.js"></script>
+    <script src="./controller/AddController.js"></script>
 </body>
 <script>
     let myApp = angular.module('myApp', ['ngRoute']);
@@ -60,6 +61,13 @@
                 {
                     templateUrl: "view/list.html",
                     controller: ListController
+                }
+            )
+            .when(
+                '/add',
+                {
+                    templateUrl: 'view/add.html',
+                    controller: AddController
                 }
             )
             .otherwise({

@@ -5,7 +5,7 @@ window.ListController = function ($scope, $http) {
     // việc call api 
 
     // Link api
-    const apiStudent = 'http://localhost:5000/student';
+    const apiStudent = 'http://localhost:3000/student';
 
     // $http.phương thức truy cập HTTP
     // GET, POST, PUT, DELETE

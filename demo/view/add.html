@@ -1,0 +1,17 @@
+<div class="card my-3">
+    <h5 class="card-header">Thêm sinh viên mới</h5>
+    <div class="card-body">
+        <form ng-submit="createStudent()">
+            <label for="" class="form-label">Họ tên:</label>
+            <input type="text" class="form-control" ng-model="student.hoTen">
+
+            <label for="" class="form-label">Email:</label>
+            <input type="text" class="form-control" ng-model="student.email">
+
+            <label for="" class="form-label">Ngày sinh:</label>
+            <input type="date" class="form-control" ng-model="student.ngaySinh">
+        
+            <button type="submit" class="btn btn-success mt-3">Thêm sinh viên</button>
+        </form>
+    </div>
+</div>
