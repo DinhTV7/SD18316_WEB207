@@ -1,17 +1,29 @@
 {
-    "student": [
-        {
-            "id": "1",
-            "hoTen": "DinhTV7",
-            "email": "abc@gmail.com",
-            "ngaySinh": "1945-10-28T18:55:10.465Z"
-        }
-    ],
-    "user": [
-        {
-            "id": "1",
-            "hoTen": "DinhTV7",
-            "email": "abc@gmail.com"
-        }
-    ]
+  "student": [
+    {
+      "hoTen": "DinhTV7 22222222",
+      "email": "abc@gmail.com",
+      "ngaySinh": "1945-10-28T18:55:10.465Z",
+      "id": "1"
+    },
+    {
+      "id": "6d94",
+      "hoTen": "DinhDZ",
+      "email": "dinh@gmail.com",
+      "ngaySinh": "2024-01-27T17:00:00.000Z"
+    },
+    {
+      "id": "9ab7",
+      "hoTen": "Dinh2222",
+      "email": "Dinh2222@gmail.com",
+      "ngaySinh": "2024-01-23T17:00:00.000Z"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "hoTen": "DinhTV7",
+      "email": "abc@gmail.com"
+    }
+  ]
 }

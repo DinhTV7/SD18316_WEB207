@@ -9,13 +9,34 @@ window.ListController = function ($scope, $http) {
 
     // $http.phương thức truy cập HTTP
     // GET, POST, PUT, DELETE
-    $http.get(apiStudent).then(function (response) {
-        console.log(response);
-        console.log(response.data); // Lấy ra dữ liệu
-        if (response.status == 200) {
-            $scope.listStudent = response.data;
-        } else {
-            alert("Call dữ liệu ko thành công");
+    function getAll() {
+        $http.get(apiStudent).then(function (response) {
+            console.log(response);
+            console.log(response.data); // Lấy ra dữ liệu
+            if (response.status == 200) {
+                $scope.listStudent = response.data;
+            } else {
+                alert("Call dữ liệu ko thành công");
+            }
+        });
+    }
+    getAll();
+    
+
+    $scope.deleteStudent = function (deleteID) {
+        // alert(deleteID)
+        let confirm = window.confirm("Bạn có muốn xóa không?");
+        // console.log(confirm);
+        if (confirm) {
+            $http.delete(
+                // apiStudent + '/' + deleteID
+                `${apiStudent}/${deleteID}`
+            ).then(function (response) {
+                if (response.status == 200) {
+                    alert("Xóa thành công");
+                    getAll();
+                }
+            });
         }
-    });
+    }
 }

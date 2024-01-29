@@ -10,6 +10,7 @@
                 <th>Họ tên</th>
                 <th>Email</th>
                 <th>Ngày sinh</th>
+                <th>Thao tác</th>
             </thead>
             <tbody>
                 <tr ng-repeat="item in listStudent">
@@ -17,6 +18,12 @@
                     <td>{{ item.hoTen }}</td>
                     <td>{{ item.email }}</td>
                     <td>{{ item.ngaySinh | date : 'dd/MM/yyyy' }}</td>
+                    <td>
+                        <a href="#!/detail/{{item.id}}">
+                            <button class="btn btn-warning">Xem chi tiết</button>
+                        </a>
+                        <button ng-click="deleteStudent(item.id)" class="btn btn-danger">Xóa</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
